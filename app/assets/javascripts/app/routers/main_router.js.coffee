@@ -2,10 +2,10 @@ class App.Routers.MainRouter extends Backbone.Router
     
   routes:
     "": "index"
-    "you": "you"
+
+  initialize: ->
+    @header = new App.Views.HeaderView()
 
   index: ->
-    console.log "hey there from router"
-
-  you: -> 
-    console.log "hey you"
+    $("#header").html(@header.render().el)
+  
