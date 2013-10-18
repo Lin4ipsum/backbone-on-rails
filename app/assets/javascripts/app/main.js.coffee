@@ -1,4 +1,5 @@
 #= require_self
+#= require_tree ./templates
 #= require_tree ./routers
 #= require_tree ./views
 
